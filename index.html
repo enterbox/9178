@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>徐许城的神秘9178网站</title>
+</head>
+<style>
+    body {background-image:url('https://pic1.imgdb.cn/item/67a88bcad0e0a243d4fd7a4e.jpg');}
+    div.card{
+        width: 90%;
+        height: 80%;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        box-shadow: 0px 40px 40px rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        margin: 20px auto;
+        color: white;
+        border: 3px solid rgb(255, 255, 255);
+        -webkit-animation:fadeinup 2s;
+        animation: fadeinup 2s;
+    }
+    div.title{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    div.card_inner {
+        width: 90%;
+        height: 80%;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        margin: 20px auto;
+        color: white;
+    }
+    div.link_card {
+        width: 90%;
+        height: 80%;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        margin: 20px auto;
+        color: white;
+    }
+    div:hover.link_card{
+        background-color: rgba(255, 255, 255, 0.8);
+        color: black;
+        user-select: none;
+    }
+    @keyframes fadeinup {
+        from {
+            transform: translatey(300%);
+        }
+        to {
+        transform: translatey(0);
+    }
+    }
+</style>
+<body>
+    <div class="card">
+        <div class="title">欢迎来到徐许城的网站</div>
+        <div class="card_inner">
+            <div class="title">About</div>
+            <p>在这里,分享生活的原点,欢乐的源泉!</p>
+        </div>
+        <div class="card_inner">
+            <div class="title">Games</div>
+            <a href="https://play.mc.js.cool/1.8/"><div class="link_card">点我玩Minecraft!</div></a>
+        </div>
+        <div class="card_inner">
+            <div class="title">Blogs & Links</div>
+            <a href="enterbox.github.io"><div class="link_card">进入博客</div></a>
+        </div>
+        <div class="card_inner">
+            这里是一个充满神秘色彩的网站，敬请期待更多精彩内容的发布！
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let unreadMessages = 0;
+
+// 更新标题函数
+let text_for_teacher = ['名校外衣，空心招牌',
+                        '河西分校，东施效颦',
+                        '学风不正，口号震天',
+                        '教师忙评，学生迷茫',
+                        '质量缩水，收费加码',
+                        '重形式，轻内涵',
+                        '追名气，弃教育',
+                        '挂羊头，卖狗肉']
+function updateTitle() {
+document.title = text_for_teacher[Math.floor(Math.random() * text_for_teacher.length)]
+}
+// 每8秒模拟接收一条新消息
+setInterval(updateTitle, 8000);
+</script>
