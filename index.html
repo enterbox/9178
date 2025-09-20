@@ -10,22 +10,21 @@
     div.card{
         width: 90%;
         height: 80%;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.6);
         border-radius: 10px;
-        box-shadow: 0px 40px 40px rgba(255, 255, 255, 0.9);
+        box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.9);
         padding: 20px;
         margin: 20px auto;
         color: white;
         border: 3px solid rgb(255, 255, 255);
-        -webkit-animation:fadeinup 2s;
-        animation: fadeinup 2s;
+        -webkit-animation:fadeinup 1.8s;
+        animation: fadeinup 1.8s;
     }
     div.title{
         font-size: 24px;
         margin-bottom: 20px;
     }
     div.card_inner {
-        width: 90%;
         height: 80%;
         background-color: rgba(255, 255, 255, 0.1);
         border-radius: 10px;
@@ -35,7 +34,6 @@
         color: white;
     }
     div.link_card {
-        width: 90%;
         height: 80%;
         background-color: rgba(0, 0, 0, 0.3);
         border-radius: 10px;
@@ -45,16 +43,19 @@
         color: white;
     }
     div:hover.link_card{
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.6);
         color: black;
+        backdrop-filter: blur(10px);
         user-select: none;
     }
     @keyframes fadeinup {
         from {
-            transform: translatey(300%);
+            transform: translatey(-300%);
+            rotate: -20deg;
         }
         to {
         transform: translatey(0);
+        rotate: 0deg;
     }
     }
 </style>
