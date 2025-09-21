@@ -41,11 +41,12 @@
         padding: 20px;
         margin: 20px auto;
         color: white;
+        background-size: cover;
+        background-position: right;
     }
     div:hover.link_card{
         background-color: rgba(255, 255, 255, 0.6);
         color: black;
-        backdrop-filter: blur(10px);
         user-select: none;
     }
     @keyframes fadeinup {
@@ -64,16 +65,16 @@
         <div class="title">欢迎来到徐许城的网站</div>
         <div class="card_inner">
             <div class="title">About</div>
-            <p>在这里,分享生活的原点,欢乐的源泉!</p>
+            <p>在这里,分享生活的原点,欢乐的源泉!</p> 
         </div>
         <div class="card_inner">
             <div class="title">Games</div>
-            <a href="https://play.mc.js.cool/1.8/"><div class="link_card">点我玩Minecraft!</div></a>
+            <a href="https://play.mc.js.cool/1.8/"><div class="link_card" style="background-image: url('https://pic1.imgdb.cn/item/68cfce26c5157e1a8822020c.png');">点我玩Minecraft!</div></a>
         </div>
         <div class="card_inner">
             <div class="title">Blogs & Links</div>
-            <a href="https://eb.jkun.cf"><div class="link_card">进入博客!</div></a>
-            <a href="https://ciyezwlglnbt.eu-central-1.clawcloudrun.com/"><div class="link_card">进入我的文件服务器!</div></a>
+            <a href="https://eb.jkun.cf"><div class="link_card" style="background-image: url('https://pic1.imgdb.cn/item/68cfda7fc5157e1a88220706.png');">进入博客!</div></a>
+            <a href="https://ciyezwlglnbt.eu-central-1.clawcloudrun.com/"><div class="link_card" style="background-image: url('https://pic1.imgdb.cn/item/68cfdc52c5157e1a88220791.png');">进入我的文件服务器!</div></a>
         </div>
         <div class="card_inner">
             这里是一个充满神秘色彩的网站，敬请期待更多精彩内容的发布！
@@ -82,8 +83,6 @@
 </body>
 </html>
 <script>
-    let unreadMessages = 0;
-
 // 更新标题函数
 let text_for_teacher = ['名校外衣，空心招牌',
                         '河西分校，东施效颦',
